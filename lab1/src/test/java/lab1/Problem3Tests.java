@@ -46,4 +46,16 @@ public class Problem3Tests {
         assertArrayEquals(new int[] {9, 5, 1, 8, 4, 0}, actual);
     }
 
+    @Test
+    void shouldFlattenMatrix_test4() {
+        // given
+        int[][] matrix = {};
+
+        // when
+        int[] actual = Problem3.flattenMatrix(matrix);
+
+        // then
+        assertArrayEquals(new int[] {}, actual);
+    }
+
 }

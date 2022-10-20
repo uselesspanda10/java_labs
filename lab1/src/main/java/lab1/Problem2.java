@@ -18,16 +18,16 @@ public class Problem2 {
     public static int[] segregateEvenAndOddNumbers(int[] array) {
         int[] newArray = new int[array.length];
         int cnt = 0;
-        for (int i = 0; i < 2; i++) {
-            for (int j = 0; j < array.length; j++) {
-                if (array[j] % 2 == 0 && i == 0) {
-                    newArray[cnt] = array[j];
-                    cnt++;
-                }
-                if (array[j] % 2 == 1 && i == 1){
-                    newArray[cnt] = array[j];
-                    cnt++;
-                }
+        for (int j = 0; j < array.length; j++) {
+            if (array[j] % 2 == 0) {
+                newArray[cnt] = array[j];
+                cnt++;
+            }
+        }
+        for (int j = 0; j < array.length; j++) {
+            if (array[j] % 2 == 1){
+                newArray[cnt] = array[j];
+                cnt++;
             }
         }
         return newArray;

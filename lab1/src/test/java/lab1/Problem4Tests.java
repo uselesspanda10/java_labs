@@ -32,6 +32,18 @@ public class Problem4Tests {
     }
 
     @Test
+    void shouldReturnTrue_ifGeometricProgression_test3() {
+        // given
+        String number = "4,6,9";
+
+        // when
+        boolean actual = Problem4.isGeometricProgression(number);
+
+        // then
+        assertTrue(actual);
+    }
+
+    @Test
     void shouldReturnFalse_ifGeometricProgression() {
         // given
         String number = "2,3,5";

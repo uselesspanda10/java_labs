@@ -26,13 +26,13 @@ public class Problem4 {
      */
     public static boolean isGeometricProgression(String numbers) {
         String strArr[] = numbers.split(",");
-        int numArr[] = new int[strArr.length];
+        float numArr[] = new float[strArr.length];
         for (int i = 0; i < strArr.length; i++) {
-            numArr[i] = Integer.parseInt(strArr[i]);
+            numArr[i] = Float.parseFloat(strArr[i]);
         }
         Arrays.sort(numArr);
 
-        int div = numArr[1]/numArr[0];
+        float div = numArr[1]/numArr[0];
         for (int i = 0; i < numArr.length-1; i++) {
             if (numArr[i]*div != numArr[i+1]) {
                 return false;

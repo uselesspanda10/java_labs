@@ -21,9 +21,8 @@ public class Problem1 {
 
     public static boolean containsDigitAInHexadecimalRepresentation(int number) {
         String hexString = (Integer.toHexString(number)).toUpperCase();
-        boolean contains = hexString.contains("A");
 
-        return contains;
+        return hexString.contains("A");
     }
 
 
